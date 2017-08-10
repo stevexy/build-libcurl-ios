@@ -61,7 +61,8 @@ ${DEVROOT}/usr/bin/lipo \
 #	-arch armv7s ${TMP_DIR}/armv7s/lib/libcurl.a \
 #	-arch i386 ${TMP_DIR}/i386/lib/libcurl.a \
 
-cp -r ${TMP_DIR}/armv7s/include ${TMP_DIR}/
+#cp -r ${TMP_DIR}/armv7s/include ${TMP_DIR}/
+cp -r ${TMP_DIR}/armvs/include ${TMP_DIR}/
 curl -O https://raw.githubusercontent.com/sinofool/build-libcurl-ios/master/patch-include.patch
 patch ${TMP_DIR}/include/curl/curlbuild.h < patch-include.patch
 
